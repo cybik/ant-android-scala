@@ -5,6 +5,7 @@
 
     <!-- Scala SDK (www.scala-lang.org) -->
     <property name="scala-compiler.jar" value="${scala.dir}/lib/scala-compiler.jar" />
+    <property name="scala-reflect.jar" value="${scala.dir}/lib/scala-reflect.jar" />
     <property name="scala-library.jar" value="${scala.dir}/lib/scala-library.jar" />
     <!-- ProGuard (www.proguard.com) -->
     <property name="proguard.jar" value="${proguard.dir}/lib/proguard.jar" />
@@ -15,6 +16,7 @@
     <path id="scala.path">
         <pathelement path="${scala-compiler.jar}" />
         <pathelement path="${scala-library.jar}" />
+        <pathelement path="${scala-reflect.jar}" />
     </path>
     <taskdef
         resource="scala/tools/ant/antlib.xml"
